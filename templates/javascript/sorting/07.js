@@ -32,5 +32,5 @@ arr.sort((a, b) => {
 });
 
 for (x of arr) {
-  console.log(x);
+  console.log(x); // 정렬된 결과를 한 줄에 하나씩 출력
 }
