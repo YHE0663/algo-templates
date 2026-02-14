@@ -43,7 +43,7 @@ let input = fs.readFileSync("/dev/stdin").toString().split("\n");
 let testCase = Number(input[0]);
 let line = 1;
 for (let tc = 0; tc < testCase; tc++) {
-  n = Number(input[line]);
+  let n = Number(input[line]);
   let arr = [];
   for (let i = line + 1; i <= line + n; i++) {
     let data = input[i].split(" ").map(Number);
@@ -57,7 +57,7 @@ for (let tc = 0; tc < testCase; tc++) {
   for (let [_, y] of arr) {
     if (y < minYValue) {
       minYValue = y;
-      count++;
+      count += 1;
     }
   }
   console.log(count);
