@@ -34,4 +34,4 @@ for (let i = 0; i < n - 1; i++) {
   answer += BigInt(cost[i]) * BigInt(dist[i]);
 }
 
-console.log(answer);
+console.log(String(answer));
