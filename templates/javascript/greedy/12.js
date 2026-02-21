@@ -8,7 +8,7 @@ for (let i = 1; i <= k; i++) {
   sum += i;
 }
 
-// if (cnt > n) result = -1;
+// if (sum > n) result = -1;
 // else if ((k % n) == 0) result = k;
 // else result = k - 1;
 // console.log(result);
