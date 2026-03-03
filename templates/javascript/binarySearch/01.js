@@ -9,7 +9,7 @@
 let fs = require("fs");
 let input = fs.readFileSync("/dev/stdin").toString().split("\n");
 
-let arr = input[1].split(" ").map(Number); // 각 지방의 예싼 요청
+let arr = input[1].split(" ").map(Number); // 각 지방의 예산 요청
 let m = Number(input[2]); // 총 예산(M)
 
 let start = 1; // 이진 탐색을 위한 시작점(start)과 끝점(end)설정
