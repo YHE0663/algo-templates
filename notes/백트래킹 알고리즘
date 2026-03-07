@@ -76,7 +76,10 @@ function possible(x, y) { // (x, y) 위치에 퀸을 놓을 수 있는지 확인
 
 let cnt = 0;
 function dfs(row) {
-  if (row == n) cont += 1; // 퀸(queen)을 N개 배치할 수 있는 경우 카운트
+  if (row == n) {
+    cnt += 1; // 퀸(queen)을 N개 배치할 수 있는 경우 카운트
+    return;
+    }
   for (let i=0; i<n; i++) { // 현재 행 (row)에 존재하는 열을 하나씩 확인하며
     if ((!possible(row, i))) continue; // 현재 위치에 놓을 수 없다면 무시
     queens.push([row, i]) // 현재 위치에 퀸을 놓기
